@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: dovetail-mvb, sans-serif;
+    padding: 0;
+    background-color: white;
+    height: 100%;
+    width: 100vw;
+
+}
+
+/*Gemensam nav alla sidor*/
+nav {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    text-align: right;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)100%);
+    padding: 0;
+    margin: 0;
+}
+
+.meny {
+    color: white;
+    padding: 0 10pt 10pt 0;
+}
+
+nav a:hover {
+    color: #a41623;
+}
+/* HEM hero header*/
+
+.hero {
+    /*storlek*/
+    min-height: 100vh;
+    width: 100%;
+
+    /*flexbox*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /*bakgrund*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0)50%, rgba(0, 0, 0, 1)), url(bilder/bakgrundkalk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logga img {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.button {
+    color: black;
+    text-align: center;
+    background-color: white;
+    font-size: 12pt;
+    display: inline-block;
+    padding: 5pt;
+    margin: 2pt 10pt;
+    box-shadow: 1pt 5pt 10pt 1pt black;
+    transition: all .5s ease;
+}
+
+a.button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 1pt 5pt 10pt 1pt #a41623;
+}
+
+.button,
+nav,
+h1,
+h2,
+h3,
+span {
+    font-family: lulo-one, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+background-color: white;
+padding-bottom: 50pt;
+}
+.main-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* OM FILMEN scrollar hit*/
+
+
+.galleri-items {
+    padding: 10pt;
+}
+
+.galleri {
+    display: flex;
+}
+
+.galleri img {
+    width: 100%;
+}
+
+#synopsis{
+    padding: 30pt 100pt 100pt;
+    max-width: 1000px;
+}
+.synopsis-text {
+    background-color: rgb(255, 255, 255, .8);
+    color: black;
+}
+
+.rating {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60pt;
+    text-align: center;
+}
+#rating-text {
+    margin: 0;
+    font-weight: 600;
+    font-style: italic;
+}
+.rating img {
+    width: 40%;
+}
+
+/*Gemensam footer alla sidor*/
+footer {
+    background-color: rgba(42, 52, 21);
+    background-size: cover;
+    font-family: lulo-one, sans-serif;
+}
+.footer {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10pt;
+}
+
+.footer div {
+    padding: 10pt 50pt;
+
+}
+
+.norcopia-logga img {
+width: 100%;
+height: auto;
+}
+
+.menu-item ul{
+    list-style: none;
+    font-size: 10pt;
+    color: white;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.menu-item .fa{
+    text-align: center;
+    font-size: 13pt;
+    color: white;
+}
+
+
+.runa img{
+    width: 100%;
+    height: auto;
+}
+.copyright {
+    color: white;
+    font-size: 8pt;
+    padding: 4pt 0 4pt 0;
+    text-align: center;
+}
+
+/* Header PROGRAM och OM*/
+
+header {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 50vh;
+    background-image: url(bilder/federico-bottos-GCTeIZMXk-k-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background: linear-gradient(rgba(0, 0, 0, 0)80%, rgba(0,0,0,1));*/
+}
+.om {
+    text-align: left;
+    padding: 30pt 100pt 100pt;
+    max-width: 1000px;
+}
+
+.om img 
+{
+    width: 100%;
+    padding-top: 30pt;
+}
+
+.logga-sub {
+    max-width: 750px;
+}
+
+.main-content h3 {
+    font-size: 20pt;
+}
+
+#underrubrik {
+    font-size: 13pt;
+}
+
+.logga-sub img {
+    width: 100%;
+}
+
+
+/*Bilder och text OM*/
+
+
+
+/*PROGRAM grid*/
+.programme-container {
+    display: grid;
+    width: 65vw;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-rows: max(25%);
+    justify-content: center;
+    align-content: center;
+    row-gap: 20pt;
+    padding-bottom: 20pt;
+    text-wrap: wrap;
+    margin-top: -10pt;
+}
+.programme-container div {
+    padding: 15pt;
+}
+
+.event {
+    background-color: rgb(196, 195, 195);
+    padding-left: 10pt;
+}
+.event span{
+    color: #8f010d;
+}
+
+.time {
+background-color:#8f010d;
+color: white;
+text-align: center;
+}
+
+.event span, .time span {
+    font-size: 15pt;
+    font-weight: 600; 
+}
+
+.time p, .event p {
+    font-size: 10pt;
+}
+
+/*Vy-anpassning*/
+@media screen and (max-width: 480px) {
+    .mobilehide {
+        display: none;
+    }
+    
+main {
+    height: auto;
+}
+
+.rating img{
+width: 100%;
+}
+
+}

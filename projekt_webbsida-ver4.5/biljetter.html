@@ -1,0 +1,159 @@
+<DOCTYPE! html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Startsida</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mvs2rmf.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!--nytt fönster vid biljettköp-->
+
+<body>
+
+    <header>
+        <nav>
+            <a class="meny" href="index.html">Hem</a>
+            <a class="meny" href="om.html">Om oss</a>
+            <a class="meny" href="program.html">Program</a>
+        </nav>
+        <div class="logga-sub"><img src="bilder/biljetter.png" alt="biljetter logga"></div>
+            <!--img med biljetter-->
+    </header>
+
+<main>
+    <h1>Köp biljetter</h1>
+    <p>Getmans rike (1 tim 45 min), CNEMA Norrköping</p>
+
+<div>
+    <h2>Välj dag</h2>
+    <p>Välj dag
+    <select name="dag">
+        <option>21 juni</option>
+        <option>22 juni</option>
+        <option>23 juni</option>
+        <option>24 juni</option>
+        <option>25 juni</option>
+        <option>26 juni</option>
+    </select>
+</p>
+</div>
+    
+
+<h2>Välj tid</h2>
+<div class="tidtabell">
+    <div class="tabell body">
+        <div class="tabell-rad">
+            <div class="tid-cell"><p>15.00</p></div>
+            <div class="salong-cell"><p>Salong 1</p><p>Sv tal | 16 år</p></div>
+            <div class="boka-cell"><button type="button">Boka</button> <p>15 platser kvar</p> </div>
+        </div>
+        <div class="tabell-rad">
+            <div class="tid-cell"><p>17.00</p></div>
+            <div class="salong-cell"><p>Salong 3</p><p>Sv tal | Eng text | 16 år</p></div>
+            <div class="boka-cell"><button type="button">Boka</button> <p>25 platser kvar</p> </div>
+        </div>
+        <div class="tabell-rad">
+            <div class="tid-cell"><p>19.00</p></div>
+            <div class="salong-cell"><p>Salong 1</p><p>Sv tal | 16 år</p></div>
+            <div class="boka-cell"><button type="button">Boka</button> <p>28 platser kvar</p> </div>
+        </div>
+    </div>
+</div>
+
+<div>
+<h2>Välj antal biljetter</h2>
+<p>Ordinarie 150 kr 
+    <select name="ord. biljett" id="ord. bilj.">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+    </select>
+</p>
+
+<p>Pensionär 100 kr
+    <select name="pen. biljett" id="pen. bilj.">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+    </select>
+</p>
+
+<p>Ungdom &#47; student 85 kr
+    <select name="ung. biljett" id="ung. bilj.">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+    </select>
+</p>
+
+<hr>
+<h3>Totalt</h3>
+<p>xx kr</p>
+<hr>
+</div>
+
+<div>
+<h2>Betalningsmetod</h2>
+<ul>
+    <li><input type="radio" name="kort" value="Kortbetalning">Kortbetalning</li>
+    <li><input type="radio" name="kort" value="Swish">Swish</li>
+</ul>
+</div>
+
+<div>
+<h3>Uppgifter</h3>
+<form>
+    <label for="förnamn">Förnamn:</label><br>
+    <input type="text" id="förnamn" name="förnamn"><br>
+
+    <label for="efternamn">Efternamn:</label><br>
+    <input type="text" id="efternamn" name="efternamn"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"><br>
+</form>
+
+<ul>
+    <li><input type="checkbox" name="användarvillkor" value="ja">Jag har tagit del av gnemas <a href="#">personuppgiftspolicy och köpvillkor</a></li>
+</ul>
+</div>
+
+<button>Till betalning</button>
+
+
+</main>
+</body>
+</html>

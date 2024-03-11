@@ -1,0 +1,558 @@
+@charset "UTF-8";
+/*CSS document*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: dovetail-mvb, sans-serif;
+    padding: 0;
+    background-color: white;
+    height: 100%;
+    width: 100vw;
+
+}
+
+/*Gemensam nav alla sidor*/
+nav {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    text-align: right;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)100%);
+    padding: 0;
+    margin: 0;
+}
+
+.meny {
+    color: white;
+    padding: 0 10pt 10pt 0;
+}
+
+nav a:hover {
+    color: #a41623;
+}
+
+/* HEM hero header*/
+
+.hero {
+    /*storlek*/
+    min-height: 100vh;
+    width: 100%;
+
+    /*flexbox*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /*bakgrund*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0)50%, rgba(0, 0, 0, 1)), url(bilder/bakgrundkalk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logga img {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.button {
+    color: black;
+    text-align: center;
+    background-color: white;
+    font-size: 12pt;
+    display: inline-block;
+    padding: 5pt;
+    margin: 2pt 10pt;
+    box-shadow: 1pt 5pt 10pt 1pt black;
+    transition: all .5s ease;
+}
+
+a.button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 1pt 5pt 10pt 1pt #a41623;
+}
+
+.button,
+nav,
+h1,
+h2,
+h3,
+span {
+    font-family: lulo-one, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    background-color: white;
+    padding-bottom: 50pt;
+}
+
+.main-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* OM FILMEN scrollar hit*/
+
+
+.galleri-items {
+    padding: 10pt;
+}
+
+.galleri {
+    display: flex;
+}
+
+.galleri img {
+    width: 100%;
+}
+
+#synopsis {
+    padding: 30pt 100pt 100pt;
+    max-width: 1000px;
+}
+
+.synopsis-text {
+    background-color: rgb(255, 255, 255, .8);
+    color: black;
+}
+
+.rating {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60pt;
+    text-align: center;
+}
+
+#rating-text {
+    margin: 0;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.rating img {
+    width: 40%;
+}
+
+/*Gemensam footer alla sidor*/
+footer {
+    background-color: rgba(42, 52, 21);
+    background-size: cover;
+    font-family: lulo-one, sans-serif;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10pt;
+
+
+
+}
+
+.footer div {
+    padding: 10pt 60pt;
+}
+
+.footer img {
+    width: 100%;
+}
+
+.runa {
+    max-width: 200px;
+}
+
+.norcopia-logga img {
+    min-width: 120px;
+    max-width: 300px;
+    
+    
+}
+
+.menu-item ul {
+    list-style: none;
+    font-size: 10pt;
+    color: white;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item .fa {
+    text-align: center;
+    font-size: 13pt;
+    color: white;
+}
+
+
+.runa img {
+    width: 100%;
+    height: auto;
+}
+
+.copyright {
+    color: white;
+    font-size: 8pt;
+    padding: 4pt 0 4pt 0;
+    text-align: center;
+}
+
+/* Header PROGRAM och OM*/
+
+header {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 50vh;
+    background-image: url(bilder/federico-bottos-GCTeIZMXk-k-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background: linear-gradient(rgba(0, 0, 0, 0)80%, rgba(0,0,0,1));*/
+}
+
+.om {
+    text-align: left;
+    padding: 30pt 100pt 100pt;
+    max-width: 1000px;
+}
+
+.om img {
+    width: 100%;
+    padding-top: 30pt;
+}
+
+.logga-sub {
+    max-width: 750px;
+}
+
+
+
+#underrubrik {
+    font-size: 13pt;
+}
+
+.logga-sub img {
+    width: 100%;
+}
+
+
+/*Bilder och text OM*/
+
+
+
+/*PROGRAM flex*/
+.programme-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    max-width: 750px;
+    padding-bottom: 40pt;
+    min-height: 200px;
+    margin-top: -10pt;
+    row-gap: 15pt;
+}
+
+.event {
+    background-color: rgb(196, 195, 195);
+    width: 75%;
+    hyphens: manual;
+    padding: 10pt;
+
+}
+
+.event span {
+    color: #8f010d;
+}
+
+.time {
+    background-color: #8f010d;
+    color: white;
+    text-align: center;
+    width: 25%;
+    padding: 10pt;
+}
+
+.event span,
+.time span {
+    font-size: large;
+    font-weight: 600;
+}
+
+.time p,
+.event p {
+    font-size: small;
+}
+
+/*Vy-anpassning*/
+@media screen and (max-width: 750px) {
+   
+    .mobilehide {
+        display: none;
+    }
+
+   nav, .footer {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    main {
+        height: auto;
+    }
+
+    .rating img {
+        width: 100%;
+    }
+
+    .programme-container, .tabell-rad >div {
+        flex-direction: column;
+        width: 100%;
+        row-gap: 0;
+
+    }
+
+    .programme-container :nth-child(1) {
+        order: 2;
+    }
+
+    .programme-container :nth-child(2) {
+        order: 1;
+    }
+
+    .programme-container :nth-child(3) {
+        order: 4;
+    }
+
+    .programme-container :nth-child(4) {
+        order: 3;
+    }
+
+    .programme-container :nth-child(5) {
+        order: 6;
+    }
+
+    .programme-container :nth-child(6) {
+        order: 5;
+    }
+
+    .programme-container :nth-child(7) {
+        order: 8;
+    }
+    .programme-container :nth-child(8) {
+        order: 7;
+    }
+
+    .event {
+        margin-bottom: 10pt;
+    }
+
+    .programme-container>* {
+        text-align: left;
+        width: 100%;
+    }
+}
+
+/*BILJETTSIDA*/
+
+/*container*/
+
+.tickets > * {
+    width: 100%;
+    max-width: 750px;
+    padding: 10pt;
+}
+
+select {
+    width: 100%;
+    max-width: 207px;
+    padding: 10pt;
+    font-family: dovetail-mvb, sans-serif;
+    color: #fff;
+    background-color: #5d6968;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/*välj tid*/
+.tabell-rad {
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 20pt;
+}
+.tabell-rad >div {
+    padding: 10pt;
+    flex: auto;
+}
+.tid-cell  {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+.tid {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.salong-cell {
+    background-color: #5d6968b9;
+}
+
+.boka-cell {
+    text-align: center;
+    background-color: #5d6968b9;
+}
+
+/*välj knapp*/
+.boka-cell input{
+    display: none;
+}
+
+.boka-cell label {
+    display: inline-flex;
+    background-color: #8f010d;
+    border-radius: 5px;
+    color: #fff;
+    font-family: dovetail-mvb, sans-serif;
+    padding: 10pt;
+    cursor: pointer;
+    user-select: none;
+}
+
+.boka-cell label:hover {
+    box-shadow: inset 1px 3px 5px #000;
+}
+.boka-cell input:checked+label {
+    background-color: black;
+}
+
+/*antal biljetter*/
+.antal-biljetter {
+ padding: 0pt;
+ display: inline-block;
+
+}
+
+
+#Totalt {
+    color: #8f010d;
+    margin: 1em 0em 3em 0em;
+    font-size: 1.3em;
+    margin-top: 1.7em;
+}
+
+
+
+/*betalningsmetod*/
+.payment li{
+    border:#000 solid 1pt;
+    max-width: 750px;
+    width: 100%;
+    padding: 5pt 0;
+    transition: all 0.3s ease;
+    margin-bottom: 5pt;
+}
+
+
+.payment li:hover {
+    background-color: #8f010d;
+    color: #fff;
+}
+.payment input:checked  {
+    accent-color: #000;
+}
+
+/*uppgifter*/
+#first-name {
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+#surname{
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+#email {
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.tickets h3 {
+    margin-top: 1.5em;
+}
+
+
+/*till betalning*/
+.submit >div{
+    text-align: center;
+
+}
+
+.submit input[type="radio"]+label{
+    display: inline-flex;
+    background-color: #8f010d;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    font-family: lulo-one, sans-serif;
+    font-weight: 600;
+    padding: 20pt;
+}
+
+#submit-button, .submit span {
+    display: none;
+}
+
+#submit-button+label:hover {
+    background-color: #000;
+    box-shadow: 0px 10px 22px #a41623;
+    transition: .3s ease;
+    cursor: pointer;
+}
+#submit-button:checked ~ span{
+display: block;
+padding: 10pt;
+font-weight: 600;
+}
+/*misc*/
+li {
+    list-style-type: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-family: dovetail-mvb, sans-serif;;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Startsida</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mvs2rmf.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav> <!--meny-->
+            <a class="meny" href="index.html">Hem</a>
+            <a class="meny" href="om.html">Om oss</a>
+            <a class="meny" href="program.html">Program</a>
+        </nav>
+        <div class="logga-sub"><img src="bilder/biljetter.png" alt="biljetter logga"></div>
+
+    </header>
+
+    <main> <!--kort information: vilken film, längd, plats-->
+        <div class="main-content tickets">
+                <div>
+                    <h2>Välj dag</h2>
+                    <div class="alternativ-dag"> <!--välja från 5 dagar in i framtiden-->
+                        <select name="dag" id="välja-dag">
+                            <option>21 juni</option>
+                            <option>22 juni</option>
+                            <option>23 juni</option>
+                            <option>24 juni</option>
+                            <option>25 juni</option>
+                            <option>26 juni</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Välj tid</h2>
+                    <!--div tabell: visar tid, salong, misc om filen typ ålersgräns osv. bokningsknapp, antal platser-->
+
+                    <div class="tabell-rad">
+                        <div class="tid-cell">
+                            <p class="tid">15.00</p>
+                        </div>
+                        <div class="salong-cell"><span>Salong 1</span>
+                            <p>Sv tal | 16 år</p>
+                        </div>
+                        <div class="boka-cell">
+                            <input type="radio" id="t15" name="booking-time">
+                            <label for="t15">Välj</label>
+                            <p>15 platser kvar</p>
+                        </div>
+                    </div>
+                    <div class="tabell-rad">
+                        <div class="tid-cell">
+                            <p class="tid">17.00</p>
+                        </div>
+                        <div class="salong-cell"><span>Salong 3</span>
+                            <p>Sv tal | 16 år</p>
+                        </div>
+                        <div class="boka-cell">
+                            <input type="radio" id="t17" name="booking-time">
+                            <label for="t17">Välj</label>
+                            <p>25 platser kvar</p>
+                        </div>
+                    </div>
+                    <div class="tabell-rad">
+                        <div class="tid-cell">
+                            <p class="tid">19.00</p>
+                        </div>
+                        <div class="salong-cell"><span>Salong 1</span>
+                            <p>Sv tal | 16 år</p>
+                        </div>
+                        <div class="boka-cell">
+                            <input type="radio" id="t19" name="booking-time">
+                            <label for="t19">Välj</label>
+                            <p>15 platser kvar</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>Välj antal biljetter</h2>
+                    <div class="antal-biljetter">
+                        <!--antal biljetter. val och pris utifrån vem man är. total summa.-->
+                        <p>Ordinarie 150 kr
+                            <select name="ord-biljett" id="ord-bilj">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                        </p>
+
+                        <p>Pensionär 100 kr
+                            <select name="pen-biljett" id="pen-bilj">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                        </p>
+
+                        <p>Ungdom &#47; student 85 kr
+                            <select name="ung-biljett" id="ung-bilj">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                        </p>
+
+                        <div id="Totalt">
+                            <h3>Totalt</h3>
+                            <p>xx kr</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>Betalnings&shy;metod</h2> <!--radio typ för att användaren bara ska kunna välja ett alternativ-->
+                    <div class="payment">
+                        <ul>
+                            <li><input type="radio" id="kort" name="betalning"><label for="kort">Kortbetalning</label></li>
+                            <li><input type="radio" id="swish" name="betalning"><label for="swish">Swish</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h3>Uppgifter</h3> <!--textfält personuppgifter-->
+                    <form>
+                        <label for="first-name">Förnamn:</label><br>
+                        <input type="text" id="first-name" name="first-name"><br>
+
+                        <label for="surname">Efternamn:</label><br>
+                        <input type="text" id="surname" name="surname"><br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email" name="email"><br>
+                    </form>
+                </div>
+
+             
+                <!--betala-->
+                
+                <div class="submit">
+                    <div><input type="checkbox" id="terms-conditions" name="terms-conditions"><label for="terms-conditions">Jag har tagit del av GNEMAs
+                        <em>personuppgiftspolicy och köpvillkor</em></label> </div><!--personuppgitspolicy + köpvillkor-->
+                         <br>
+                         <div><input type="radio" id="submit-button"><label for="submit-button">Till betalning</label>
+                    <span>Tack!</span></div>
+                </div>
+           
+            </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            <div class="norcopia-logga"><img src="bilder/norcopia-logga.png" alt="Norcopia logga"></div>
+            <div class="menu-item">
+                <ul> <!--länkar till info om norcopia-->
+                    <li>Om oss</li>
+                    <li>Kontakt</li>
+                    <li>FAQ</li>
+                    <li>Policy</li>
+                    <!--sociala medier-->
+                    <li><a class="fa fa-facebook"
+                            href="https://sv-se.facebook.com/login/device-based/regular/login/?login_attempt=1"></a>
+                        <a class="fa fa-instagram" href="https://www.instagram.com/"></a>
+                        <a class="fa fa-twitter" href="https://twitter.com/?lang=sv"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobilehide runa"><img src="bilder/runa-oak.png" alt="runa-oak"></div>
+        </div>
+        <div class="copyright"><span>&copy;Norcopia 2024</span></div>
+    </footer>
+
+</body>
+
+</html>
